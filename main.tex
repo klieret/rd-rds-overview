@@ -3,9 +3,15 @@
 %\usepackage{booktabs}
 \usepackage{amsmath}
 \input{shortcuts.tex}
+\thispagestyle{empty}
+\usepackage{tabularx}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 \begin{document}
     \begin{table}[]
-        \begin{tabular}{lp{1.5cm}ccp{3cm}p{5cm}p{2cm}p{2cm}p{2cm}p{4cm}p{3cm}p{3cm}p{3cm}}
+        \begin{tabular}{lL{1.5cm}ccL{3cm}L{5cm}L{2cm}L{2cm}L{2cm}L{4cm}L{3cm}L{3cm}L{3cm}}
             \input{table.tex}
         \end{tabular}
     \end{table}

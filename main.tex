@@ -5,14 +5,31 @@
 \input{shortcuts.tex}
 \thispagestyle{empty}
 \usepackage{tabularx}
-
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{2}
 \begin{document}
     \begin{table}[]
-        \begin{tabular}{lL{1.5cm}ccL{3cm}L{5cm}L{2cm}L{2cm}L{2cm}L{4cm}L{3cm}L{3cm}L{3cm}}
+        \begin{tabular}{
+                |c % key
+                |C{1.5cm} % status
+                |c % d
+                |c % d*
+                |L{3cm} % paper 
+                |L{5cm} % tag
+                |C{2cm} % t
+                |C{2.2cm} % D*
+                |C{2.2cm} % D
+                |L{4cm} % trivia
+                |L{4cm} % fit
+                |L{3.5cm} % errd
+                |L{3.5cm} % errds
+                |
+                }
+            \hline\hline
             \input{table.tex}
+            \\\hline\hline
         \end{tabular}
     \end{table}
 \end{document}

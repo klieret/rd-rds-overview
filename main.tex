@@ -1,17 +1,7 @@
-\documentclass[10pt, landscape]{article}
-\usepackage[a3paper, left=10mm, right=10mm, top=10mm, bottom=10mm]{geometry}
-%\usepackage{booktabs}
-\usepackage{amsmath}
-\input{shortcuts.tex}
-\thispagestyle{empty}
-\usepackage{tabularx}
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
-\renewcommand{\arraystretch}{2}
-\usepackage{graphicx}
-\usepackage{url}
+\input{input/header.tex}
+\input{input/shortcuts.tex}
 \begin{document}
+    \thispagestyle{empty}
     \begin{center}\Large
         Overview over relevant measurements of $R(D)$ and $R(D^*)$
         --- Kilian Lieret
@@ -37,7 +27,7 @@
                 |
                 }
             \hline\hline
-            \input{table.tex}
+            \input{input/table.tex}
             \\\hline\hline
         \end{tabular}
     \end{center}

@@ -5,9 +5,15 @@
 \usepackage{tabularx}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{color}
+\usepackage{colortbl}
 
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 
+\newcolumntype{H}[1]{>{\columncolor{headergray}}c}
+
 \renewcommand{\arraystretch}{2}
+
+\definecolor{headergray}{gray}{0.9}

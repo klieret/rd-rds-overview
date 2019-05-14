@@ -10,9 +10,16 @@
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 \renewcommand{\arraystretch}{2}
 \usepackage{graphicx}
+\usepackage{url}
 \begin{document}
+    \begin{center}\Large
+        Overview over relevant measurements of $R(D)$ and $R(D^*)$
+        --- Kilian Lieret
+        --- \today 
+        --- \LaTeX{} source available \url{github.com/klieret/rd-rds-overview} (contributions welcome)
+    \end{center}
     
-%    \begin{table}[t]
+    \begin{center}
         \begin{tabular}{
                 |c % key
                 |C{1.5cm} % status
@@ -33,8 +40,9 @@
             \input{table.tex}
             \\\hline\hline
         \end{tabular}
-%    \end{table}
+    \end{center}
     
-    \includegraphics[height=8cm]{fig/hflav.pdf}
+    \vspace{1cm}
+    \includegraphics[height=9cm]{fig/hflav.pdf}
     
 \end{document}
